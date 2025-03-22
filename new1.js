@@ -23,8 +23,8 @@ document.addEventListener("DOMContentLoaded", function () {
     // Search button functionality
     searchBtn.addEventListener("click", function () {
         const query = searchInput.value.trim().toLowerCase();
-        searchResults.innerHTML = ""; // Clear previous results
-        searchResults.style.display = "none"; // Hide initially
+        searchResults.innerHTML = ""; 
+        searchResults.style.display = "none";
 
         if (query === "") {
             alert("Please enter a valid search keyword.");
@@ -53,8 +53,8 @@ document.addEventListener("DOMContentLoaded", function () {
     // Clear button functionality
     clearBtn.addEventListener("click", function () {
         searchInput.value = "";
-        searchResults.innerHTML = ""; // Clear results
-        searchResults.style.display = "none"; // Hide dropdown
+        searchResults.innerHTML = ""; 
+        searchResults.style.display = "none"; 
     });
 
     function displayResults(results) {
@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
             card.classList.add("result-card");
 
             card.innerHTML = `
-                <img src="${place.image}" alt="${place.name}" style="width: 50px; height: 50px; border-radius: 5px;">
+                <img src="${place.image}" alt="${place.name}" style="width: 300px; height: 170px; border-radius: 5px;">
                 <div>
                     <h4>${place.name}</h4>
                     <p>${place.location || place.description}</p>
@@ -73,10 +73,9 @@ document.addEventListener("DOMContentLoaded", function () {
             searchResults.appendChild(card);
         });
 
-        searchResults.style.display = "block"; // Show dropdown
+        searchResults.style.display = "block";
     }
 
-    // Hide results when clicking outside
     document.addEventListener("click", function (event) {
         if (!document.querySelector(".search-box").contains(event.target)) {
             searchResults.style.display = "none";
@@ -87,9 +86,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const contactForm = document.getElementById("contactForm");
     if (contactForm) {
         contactForm.addEventListener("submit", function (event) {
-            event.preventDefault(); // Prevent page reload
+            event.preventDefault(); 
             alert("Message sent successfully!");
-            contactForm.reset(); // Clear form after submission
+            contactForm.reset(); 
         });
     }
 });
