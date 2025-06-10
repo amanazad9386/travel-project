@@ -7,16 +7,16 @@ document.addEventListener("DOMContentLoaded", function () {
     // Define recommendations
     const recommendations = {
         "temple": [
-            { name: "Angkor Wat", location: "Cambodia", image: "/temple 2.jpg" },
-            { name: "Meenakshi Temple", location: "India", image: "/temple 1.jpg" }
+            { name: "Angkor Wat", location: "Cambodia", image: "temple 2.jpg" },
+            { name: "Meenakshi Temple", location: "India", image: "temple 1.jpg" }
         ],
         "beach": [
             { name: "Bora Bora", location: "French Polynesia", image: "beach2.jpg" },
             { name: "Maldives", location: "Indian Ocean", image: "beach1.jpg" }
         ],
         "country": [
-            { name: "Thailand", description: "Known for its beautiful beaches and temples.", image: "\country 1.jpg" },
-            { name: "Greece", description: "Home to historical landmarks like the Colosseum and Venice.", image: "\country 2.jpg" }
+            { name: "Thailand", description: "Known for its beautiful beaches and temples.", image: "country 1.jpg" },
+            { name: "Greece", description: "Home to historical landmarks like the Colosseum and Venice.", image: "country 2.jpg" }
         ]
     };
 
